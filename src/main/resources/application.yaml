@@ -1,6 +1,6 @@
 spring:
   application:
-    name: PhegonAirline
+    name: MonAirline
 
   datasource:
     url: jdbc:mysql://localhost:3306/flightdb
@@ -10,3 +10,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 2592000000 # 30 days in milliseconds
