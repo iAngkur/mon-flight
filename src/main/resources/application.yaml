@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: PhegonAirline
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/flightdb
+    username: ${USERNAME}
+    password: ${PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
