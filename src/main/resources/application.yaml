@@ -11,6 +11,22 @@ spring:
     hibernate:
       ddl-auto: update
 
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${EMAIL}
+    password: ${SMTP_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+frontendLoginUrl: http://localhost:5173/login
+viewBookingUrl: http://localhost:5173/my-bookings
+
 jwt:
   secret: ${JWT_SECRET}
   expiration: 2592000000 # 30 days in milliseconds
